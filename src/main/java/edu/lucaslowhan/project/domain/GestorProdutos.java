@@ -39,10 +39,17 @@ public class GestorProdutos {
 
     public void ordenarPorNome(){
         produtoList.sort(new Comparators.ComparadorPorNome());
+        for(Produto p:produtoList){
+            System.out.println(p.getNome()+ " - "+p.getPreco()+ " - " + p.getCategoria());
+        }
     }
 
     public void ordenarPorCategoria(){
         produtoList.sort(new Comparators.ComparadorPorCategoria());
+        for(Produto p:produtoList){
+            System.out.println(p.getNome()+ " - "+p.getPreco()+ " - " + p.getCategoria());
+        }
+
     }
 
     public void exibirFilaDePedidos(){
